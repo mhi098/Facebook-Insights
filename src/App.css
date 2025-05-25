@@ -1,0 +1,422 @@
+.user-logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.avatar-container {
+  position: relative;
+  color: #1c2b33;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e4e6eb;
+  color: #555;
+  font-size: 18px;
+  font-weight: bold;
+}
+.user_profile {
+  width: 36px !important;
+  height: 36px !important;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.icon {
+  position: absolute;
+  bottom: -2px;
+
+  right: -2px;
+  width: 18px;
+  height: 18px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 1px solid #e4e6eb;
+}
+
+.icon img {
+  width: 15px;
+  height: 15px;
+  object-fit: contain;
+}
+
+.username {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  margin-left: 8px;
+}
+.sidebar {
+  width: 5%;
+}
+.sidebar svg {
+  cursor: pointer;
+  color: #333;
+}
+/* 
+.scrollAble {
+  cursor: pointer;
+  height: 56vh;
+  transition: height 0.5s ease-in-out;
+  overflow-y: hidden;
+} */
+
+.main-scroll {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  flex: 1;
+}
+
+.scrollAble button:hover {
+  background-color: #ebe8e8;
+}
+.sidebar:hover .scrollAble {
+  overflow-y: scroll;
+}
+.inside_scroll {
+  flex: 0 0 auto;
+  position: sticky;
+  top: 85px;
+  height: 83vh;
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+.shodow-css {
+  box-shadow: 0px 1px 3px -1px rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0px 1px 3px -1px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0px 1px 3px -1px rgba(0, 0, 0, 0.19);
+}
+.scrollAble {
+  overflow: hidden;
+  position: relative;
+  scrollbar-gutter: stable;
+}
+.inside_scroll:hover .scrollAble {
+  overflow-y: scroll;
+}
+
+.scrollAble::-webkit-scrollbar {
+  width: 8px;
+  position: absolute;
+}
+
+.scrollAble::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.scrollAble::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 10px;
+  position: absolute;
+  right: 0;
+}
+.scrollAble::-webkit-scrollbar-track:hover {
+  background-color: #f1f1f1;
+}
+
+.sidebar button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #333;
+  font-size: 12px;
+  font-weight: 500;
+}
+button.active {
+  background-color: #1c2b33 !important;
+  color: white !important;
+}
+.inner_sidebar button:hover {
+  background-color: #ebe8e8;
+}
+.sidebar button:hover {
+  background-color: #ebe8e8;
+}
+.sidebar button.active {
+  background-color: #1c2b33;
+  color: white;
+}
+.sidebar button.active svg {
+  color: white !important;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex: 1;
+  height: 100vh;
+}
+.insight_btn {
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.4) !important;
+  color: #1c2b33;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 0px 10px;
+  border-radius: 3px;
+}
+.insight_btn:hover {
+  background-color: rgba(0, 0, 0, 0.03) !important;
+}
+.dropdown-toggle::after {
+  border-top: 0.5em solid;
+  border-right: 0.5em solid transparent;
+  border-bottom: 0;
+  border-left: 0.5em solid transparent;
+  margin: 0 5px;
+}
+.sidebar-container button {
+  padding: 10px 12px;
+}
+.border_left {
+  width: 1px;
+  height: 36px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.rdrStaticRanges {
+  display: none !important;
+}
+.rdrDefinedRangesWrapper {
+  font-size: 12px;
+  width: 226px;
+  border-right: solid 1px #eff2f7;
+  background: #fff;
+  display: none !important;
+  opacity: 0 !important;
+}
+.date_range_container {
+  position: absolute;
+  right: 10px;
+  z-index: 10;
+  background-color: #fff;
+  border: 1px solid #ebe8e8;
+  border-radius: 4px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 16px;
+}
+
+.rdrDateDisplayWrapper {
+  display: none !important;
+}
+.rdrMonthAndYearWrapper {
+  display: none !important;
+}
+.rdrMonthName {
+  display: none !important;
+}
+.rdrMonth {
+  width: 20.667em !important;
+}
+.rdrDayNumber {
+  color: #555 !important;
+  font-weight: 600 !important;
+  border-radius: 2px !important;
+}
+
+.rdrDayNumber:hover {
+  background-color: rgb(189, 189, 189);
+  border-radius: 5px !important;
+  border: none !important;
+  outline: none !important;
+}
+.rdrEndEdge {
+  border-radius: 5px !important;
+  background-color: rgba(10, 120, 190, 1) !important;
+}
+
+.rdrStartEdge {
+  border-radius: 5px !important;
+  background-color: rgba(10, 120, 190, 1) !important;
+}
+
+.rdrInRange {
+  background-color: rgba(10, 120, 190, 0.3) !important;
+  border-radius: 0px !important;
+  color: #1c2b33 !important;
+}
+.rdrDayDisabled {
+  background-color: transparent !important;
+}
+.cancel_btn {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  font-size: 14px;
+  font-weight: 600;
+  color: #1c2b33;
+}
+.cancel_btn:hover {
+  background-color: rgba(0, 0, 0, 0.03) !important;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+}
+.update_btn {
+  background-color: rgba(10, 120, 190, 1);
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}
+.update_btn:hover {
+  background-color: rgb(4, 93, 148);
+  color: #fff;
+}
+.collapse_btn {
+  position: absolute;
+  /* width: 100%; */
+  bottom: 0;
+  display: flex;
+  align-items: center;
+}
+.collapse_btn > i {
+  cursor: pointer;
+}
+.compare[type="checkbox"] {
+  transform: scale(1.2);
+  margin: 10px 10px 0 10px;
+}
+.rdrDay {
+  padding: 0;
+  height: 2.6em !important;
+  text-align: center;
+  color: #1d2429;
+}
+
+.monetization_btn {
+  color: rgba(10, 120, 190, 1) !important;
+  font-weight: bold;
+  background-color: rgba(225, 237, 247, 1);
+}
+.monetization_btn:hover {
+  background-color: rgba(200, 220, 240, 1) !important;
+}
+.recharts-cartesian-axis-line {
+  stroke-width: 0px !important;
+}
+.recharts-cartesian-axis-tick-line {
+  stroke-width: 0%;
+}
+.top_video_img {
+  width: 50px;
+  height: 50px;
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.top_video_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.video_overlay {
+  position: absolute;
+  top: 3px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  right: 3px;
+  font-size: 9px;
+  padding: 0px 4px;
+  border-radius: 2px;
+  margin: 0;
+}
+.progress-bar {
+  background-color: rgba(0, 126, 89, 1);
+  height: 4px;
+}
+.progress {
+  height: 4px;
+  margin-top: 3px;
+}
+
+.rdrDayPassive {
+  display: none !important;
+}
+.recharts-surface {
+  cursor: pointer !important;
+}
+.how_it_works {
+  width: 3.4rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #ebe8e8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.learn {
+  width: 3rem !important;
+}
+
+.small-line {
+  width: 15px;
+  height: 1px;
+  background: black;
+  margin-top: 12px;
+}
+.earning-border {
+  border: 1px solid rgba(50, 205, 205, 1);
+}
+.rdrStartEdge {
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+
+.rdrEndEdge {
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+}
+.rdrDayWeekend > .rdrInRange {
+  border-top-right-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+}
+
+.rdrDayWeekend.rdrDayEndOfWeek > .rdrInRange {
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  border-top-left-radius: 5px !important;
+  border-bottom-left-radius: 5px !important;
+}
+.rdrDayWeekend.rdrDayEndOfWeek {
+  margin-right: -4px;
+}
+.rdrDayToday .rdrDayNumber span:after {
+  display: none !important;
+}
+.rdrStartEdge.rdrEndEdge {
+  border-radius: 5px !important;
+}
+.rdrDayInPreview {
+  color: transparent !important;
+}
+.rdrDayHovered {
+  color: transparent !important;
+}
+.rdrDayStartPreview,
+.rdrDayEndPreview {
+  color: transparent !important;
+}
+.ellipse-text {
+  width: 265px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
